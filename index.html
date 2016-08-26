@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>NooSphere Project</title>
+    <title>NooSphere</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -12,149 +12,68 @@
   </head>
   <body>
     <section class="page-header">
-      <img src="images/ResearchStack-logo.png" alt="ResearchStack logo" height="150" width="150">
-      <h1 class="project-name">Noosphere Project</h1>
+      <img src="images/Noosphere-logo.png" alt="ResearchStack logo" height="150" width="150">
+      <h1 class="project-name">Noosphere</h1>
       <h2 class="project-tagline">Creating a cognogram of all human beliefs and facts</h2>
-      <a href="https://github.com/Example/Example" class="btn">Source Code (GitHub)</a>
-      <a href="#documentation" class="btn">Documentation</a>
-      <a href="https://groups.google.com/forum/#!forum/researchstack" class="btn">Announcements & Forum</a>
-      <!-- <a href="https://twitter.com/NoosphereProject" class="btn">Twitter</a> -->
+      <a href="https://github.com/gnosco/noosphere" class="btn">Source Code (GitHub)</a>
+      <a href="#infomation" class="btn">Infomation</a>
+      <!-- <a href="https://twitter.com/Noospheregnosco" class="btn">Twitter</a> -->
       <a id="click_here" onclick="revealForm()" class='btn clicker successful-signup'>Contact Us</a>
     </section>
 
     <section id="signup-section" class="signup-section">
-      <!-- <h2 class="signup-tagline successful-signup">Want to join the Beta Preview?</h2> -->
+      <!-- <h2 class="signup-tagline successful-signup">Want to join us?</h2> -->
       <h2 class="signup-tagline hidden success_message">
         Thank you for your message!
       </h2>
-      <form id="registration_form" action="http://formspree.io/michael.carroll@cornell.edu" method="POST" class="hidden successful-signup">
+      <form id="registration_form" action="http://formspree.io/contact@gnosco.org" method="POST" class="hidden successful-signup">
         <input id="name" type="text" name="name" placeholder="name (required)" class="signup-field" required>
         </br>
         <input id="email" type="email" name="_replyto" placeholder="email (required)" class="signup-field" required>
         </br>
-        <textarea id="message" type="text" name="message" placeholder="Tell us a bit about your project/interest!" class="signup-field" rows="5"></textarea>
+        <textarea id="message" type="text" name="message" placeholder="Tell us about your interest!" class="signup-field" rows="5"></textarea>
         </br>
-        <input type="hidden" name="_subject" value="NoosphereProject beta preview access request" />
+        <input type="hidden" name="_subject" value="Contacting NooSphere" />
         <input type="hidden" name="_next" value="/#successful-signup" />
-        <input id="register" type="submit" value="Sign me up!" class="btn successful-signup">
+        <input id="register" type="submit" value="Contact Us!" class="btn successful-signup">
       </form>
       <h1 id="success_message" class="signup-tagline hidden">
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="what-is-NoosphereProject" class="anchor" href="#what-is-NoosphereProject" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is NoosphereProject?</h3>
+	<h3>
+		<a id="what-is-Noosphere" class="anchor" href="#what-is-Noosphere" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is Noosphere?
+	</h3>
 
   <p>
-    NoosphereProject is an SDK and UX framework for building research study apps on Android.
+    Noosphere is a project to catalogue the interactions and consequences of all human beliefs creating a human cognogram.
   </p>
 
   <p>
-    It is designed from the ground up to meet the requirements of most scientific research, including capturing participant consent, extensible input tasks, and the security and privacy needs necessary for IRB approval.
+    The goal of Noosphere is to highlight what is currently known to be scientifically real to scientific illiterate people in a pragmatically digestible way.
   </p>
+
+
+
 
 <h3>
-  <a id="is-it-similar-to-ios-researchkittm" class="anchor" href="#is-it-similar-to-ios-researchkittm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Is it similar to Apple's ResearchKit(TM)?
+  <a id="infomation" class="anchor" href="#infomation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Where can I find more infomation?
 </h3>
 
   <p>
-    Yes, an overarching goal of NoosphereProject is to help developers and researchers with existing apps on iOS more easily adapt those apps for Android.
+    A paper describing the technical agenda and construction of the project is on our GitHub <a href="https://github.com/gnosco/noosphere/paper">GitHub</a>.
   </p>
 
-  <p>
-    Though the correspondence of features between the two SDKs isn’t one-to-one, the two SDKs will offer enough shared functionality and a common framework and naming scheme to greatly speed up adaptation of ResearchKit apps to Android (and NoosphereProject apps to iOS) and the procedural aspects of running a study on a new platform (such as IRB approval and secure connectivity with a data collection backend).
-  </p>
 
-<h3>
-  <a id="researchstack-1-0-release" class="anchor" href="#researchstack-1-0-release" aria-hidden="true"><span class="octicon octicon-link"></span></a>What features are available?
-</h3>
-
-  <p>
-    Researchers and developers can leverage ResearchStack to build a basic Android app without having extensive knowledge of the Android platform. Using JSON and HTML files, a simple app can be built that will include the onboarding flow (Study Overview/Consent/Sign Up) and an Activities screen with scheduled tasks for the user. Researchers will also be able to reuse existing ResearchKit AppCore resources, <a href="https://github.com/ResearchStack/ResearchStack#things-to-look-out-for-when-converting-your-researchkit-app">with some minor changes</a>.
-  </p>
-
-  <p>
-    Included graphing libraries facilitate data visualization. ResearchStack also has tools to allow easy on-disk encryption and strives to be extensible so that researchers can implement or modify screens they need.
-  </p>
-
-<h3>
-  <a id="how-to-port" class="anchor" href="#how-to-port" aria-hidden="true"><span class="octicon octicon-link"></span></a>I have an existing ResearchKit app, how do I port it to ResearchStack?
-</h3>
-
-  <p>
-    Not all ResearchKit apps were made equal but, if your ResearchKit app was built using the 'AppCore' JSON schemas and other assets, you can adapt those over to work in ResearchStack with minimal effort. Along those lines, the <a href="https://github.com/ResearchStack/SampleApp">SampleApp</a> is an excellent, lightweight implementation of AppCore assets into ResearchStack to reference.
-  </p>
-
-  <p>
-    We are also currently working to develop tutorials on adapting ResearchKit apps to ResearchStack but, in the meantime, probably the best reference is to look at actual implementations of ResearchKit apps to ResearchStack. The open source <a href="https://github.com/Sage-Bionetworks/MoleMapper">iOS</a> and <a href="https://github.com/ResearchStack/MoleMapperAndroid">Android</a> repositories for <a href='https://www.ohsu.edu/xd/health/services/dermatology/war-on-melanoma/mole-mapper.cfm'> OHSU's MoleMapper</a> are good examples to start with (particularly if your app uses Sage Bridge for a backend).
-  </p>
-
-  <p>
-    If your ResearchKit app was <i>not</i> built using the features of AppCore, the road ahead involves a bit more work but should still be familiar to you, since the naming schema and APIs of ResearchStack are deliberately similar to those of ResearchKit. A good place to look is the <a href="https://github.com/ResearchStack/BackboneExampleApp">Backbone ExampleApp</a>, which sticks a bit closer to the "metal" of the ResearchStack framework.
-  </p>
-
-  <ul>
-    <li>
-      <a href="https://github.com/ResearchStack/SampleApp">
-        SampleApp (ResearchStack)
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/Sage-Bionetworks/MoleMapper">
-        MoleMapper ResearchKit source code (iOS)
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/ResearchStack/MoleMapperAndroid">
-        MoleMapper ResearchStack source code (Android)
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/ResearchStack/BackboneExampleApp">
-        Backbone ExampleApp (ResearchStack)
-      </a>
-    </li>
-  </ul>
-
-<h3>
-  <a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Where's the documentation?
-</h3>
-
-  <p>
-    ResearchStack has two primary modules. Backbone contains the core ResearchStack functionality and is designed to follow the APIs laid out in Apple's ResearchKit core as closely as possible. Skin is an application framework that implements the functionality of ResearchKit's AppCore. Links to the Javadocs for both Backbone and Skin are below; be aware that the documentation is itself a work in progress. Please post any issues on the ResearchStack <a href="https://github.com/ResearchStack/ResearchStack">GitHub</a>.
-  </p>
-
-  <ul>
-    <li>
-      <a href="documentation/backbone">Backbone Documentation</a>
-    </li>
-    <li>
-      <a href="documentation/skin">Skin Documentation</a>
-    </li>
-  </ul>
-
-<h3>
-  <a id="packages" class="anchor" href="#packages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Are there extensions or packages available?
-</h3>
-
-  <p>
-    The ResearchStack community is still nascent, but a number of extensions -- including ActiveTasks -- are currently in the works. We'll be publishing a list of them here, as they become available.
-  </p>
-
-  <p>
-    If you have an extension/package for ResearchStack, please <a href="mailto:michael.carroll@cornell.edu">reach out to let us know</a>, so that we can help make others aware. (Or just <a href="https://github.com/ResearchStack/ResearchStack/tree/gh-pages">fork this site</a> and submit your addition as a pull request!)
-  </p>
 
 <h3>
   <a id="who-is-backing-this-project" class="anchor" href="#who-is-backing-this-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Who is backing this project?
 </h3>
 
-  <p>
-    ResearchStack is maintained by <a href="https://tech.cornell.edu/">Cornell Tech</a>'s <a href="http://smalldata.io/">Small Data Lab</a> and <a href="http://www.openmhealth.org/">Open mHealth</a>. The current project maintainers are <a href="http://destrin.smalldata.io">Deborah Estrin</a>, <a href="http://michael.carroll.io">Michael Carroll</a> and <a href="https://github.com/nrlakin">Neil Lakin</a>.
-  </p>
+  
 
   <p>
-    A special debt of gratitude is also owed to <a href="http://www.rwjf.org/">Robert Wood Johnson Foundation</a>, which provided initial funding for the project, and to <a href="http://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/clinical-departments/dermatology-research/">OHSU</a>, <a href="http://sagebase.org/">Sage Bionetworks</a>, <a href="http://www.touchlab.co">touchlab</a>, <a href="https://twitter.com/Dan_E_Webster">Dan Webster</a>, and all of <a href="https://github.com/ResearchStack/ResearchStack/graphs/contributors">our volunteer contributors</a> for their involvement in getting the initial platform and MoleMapper Android off the ground.
+    We are looking for collabrators and suggestions. 
   </p>
 
 <h3>
@@ -162,7 +81,7 @@
 </h3>
 
   <p>
-    We ❤︎ contributors! Please check out our <a href="https://github.com/ResearchStack/ResearchStack/blob/master/CONTRIBUTORS">CONTRIBUTORS file</a> for details on how to submit a pull request to ResearchStack.
+    Noosphere needs your help finding scientific studies and statements of belief. The team is currently researching options on how to do this. Let us know if you would like infomation once we decide on a method of approach.
   </p>
 
 <h3>
@@ -170,7 +89,7 @@
 </h3>
 
   <p>
-    For further questions, please join <a href="https://groups.google.com/forum/#!forum/researchstack">the ResearchStack forum</a> or contact <a href="mailto:michael.carroll@cornell.edu">Michael Carroll</a>.
+    For further questions, please <a href="contact@gnosco.org">contact us</a>.
   </p>
 
       <footer class="site-footer">
@@ -196,7 +115,7 @@
           </script>
           <script type="text/javascript">
             try {
-              var pageTracker = _gat._getTracker("UA-73169424-1");
+              var pageTracker = _gat._getTracker("UA-000000000-1");
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
